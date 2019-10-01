@@ -1,0 +1,21 @@
+{
+  "name": "DiscordRaiderPLUS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "raid bot",
+    "discord raider",
+    "discord bot",
+    "discord"
+  ],
+  "author": "Luke C",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "electron": "^6.0.10"
+  }
+}
