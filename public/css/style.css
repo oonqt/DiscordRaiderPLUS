@@ -1,0 +1,34 @@
+.title {
+    margin-bottom: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+.row {
+    margin: 0;
+}
+
+.btn, .btn:hover, .btn:focus {
+    background-color: #7289DA;
+}
+
+.input-field input:focus + label {
+    color: #7289DA!important;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #7289DA !important;
+    box-shadow: 0 1px 0 0 #7289DA !important;
+}
+
+.function-btn {
+    float: center;
+    margin-right: 25px;
+    width: 20%;
+}
+
+li > span {
+    color: #7289DA !important;
+}

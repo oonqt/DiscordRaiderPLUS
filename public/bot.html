@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DiscordRaider+</title>
+
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div style="margin-top: 25px;" class="container">
+        <div class="row">
+            <button class="btn waves-effect waves-light function-btn" id="dmAll">DM All</button>
+            <button class="btn waves-effect waves-light function-btn" id="spamEveryone">@everyone</button>
+            <button class="btn waves-effect waves-light function-btn" id="kickAll">Kick All</button>
+            <button class="btn waves-effect waves-light function-btn" id="banAll">Ban All</button>
+        </div>
+
+        <form id="status">
+            <div class="row" style="margin-top: 25px;">
+                <div class="input-field col s3">
+                    <select id="activityType">
+                        <option value="PLAYING" selected>Playing</option>
+                        <option value="LISTENING">Listening</option>
+                        <option value="WATCHING">Watching</option>
+                    </select>
+                    <label for="activityType">Status Type</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="activityName" type="text">
+                    <label for="activityName">Status Name</label>
+                </div>
+                <div class="col s3" style="margin-top: 10px;">
+                    <button class="btn waves-effect waves-light" type="submit">Set Status</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script src="js/bot.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+</body>
+</html>
